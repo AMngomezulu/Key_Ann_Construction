@@ -1,39 +1,52 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kay Ann Construction</title>
-  <link rel="icon" type="images/jpg" sizes="32x32" href="logo.jpg">
-  <link rel="stylesheet" href="style.css" />
-  
-  <!-- Fonts -->
+
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kay Ann Construction</title>
+	<link rel="icon" type="images/jpg" sizes="32x32" href="assets/images/logo.jpg">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  
-</head>
-<body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <h1>Kay Ann Construction</h1>
-      <p>Quality Redefined</p>
-    </div>
+    <!-- Stylesheet -->
+	<link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand">Kay Ann Construction.
+		<p>Quality Redefined</p></a>
 
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-controls">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18.75a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75ZM6.166 18.894a.75.75 0 0 1-1.06-1.06l1.59-1.591a.75.75 0 1 1 1.061 1.06l-1.59 1.591ZM2.25 12a.75.75 0 0 1 .75-.75H5.25a.75.75 0 0 1 0 1.5H3a.75.75 0 0 1-.75-.75ZM6.166 6.166a.75.75 0 0 1 1.06-1.06l1.59 1.591a.75.75 0 1 1-1.061 1.06l-1.59-1.591Z"
+              />
+            </svg>
+          </button>
+
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </nav>
-  </header>
 
-  <!-- Hero Section -->
+      <!-- Hero Section -->
   <section class="hero" id="home">
     <div class="hero-text">
       <h2>LIMITLESS QUALITY SERVICES</h2>
@@ -44,10 +57,6 @@
 
       <button onclick="showMessage()">Get Started</button>
     </div>
-
-    <!--<div class="hero-image">
-      <img src="images/worker.png" alt="Construction Worker">
-    </div> -->
   </section>
 
   <!-- Services -->
@@ -55,18 +64,19 @@
     <h2>Services Offered</h2>
 
     <div class="service-boxes">
-
-      <div class="box">Electricity Installations</div>
-      <div class="box">Stove & Gas Installation</div>
-      <div class="box">Solar System Installation</div>
+	
+	  <div class="box">House Plans Designs</div>
+      <div class="box">Exterior & Interior Design</div>
       <div class="box">House Building</div>
       <div class="box">Wall Plastering</div>
-      <div class="box">Mesh & Palisades Fencing</div>
       <div class="box">Concrete Flooring</div>
-      <div class="box">Ceiling Installations</div>
       <div class="box">Tiling Installation</div>
-      <div class="box">House Plans Designs</div>
-      <div class="box">Exterior & Interior Design</div>
+      <div class="box">Ceiling Installations</div>
+      <div class="box">Mesh & Palisades Fencing</div>
+      <div class="box">Electricity Installations</div>
+      <div class="box">Solar System Installation</div>
+      <div class="box">Stove & Gas Installation</div>
+      
 
     </div>
   </section>
@@ -83,21 +93,54 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-
-    <p><a href="https://www.facebook.com/profile.php?id=61585968606571#"><img src="Facebook.webp" height="30px"></a></p>
-    <p><a href="https://www.instagram.com/kay_ann_construction/"><img src="instagram.png" height="30px"></a></p>
-    <p><a href="https://wa.me/+27636077159#"><img src="WhatsApp.webp" height="30px"></a></p>
-    <p>📞 063 607 7159</p>
-    
+  <section class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>Get in touch & bring your dream into reality.</p>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Kay Ann Construction | All Rights Reserved</p>
-  </footer>
+  <div class="container">
 
-  <script src="script.js"></script>
-</body>
+    <div class="contact-box">
+      <h2>Send a Message</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+		<input type="hidden" name="access_key" value="3449a264-fb8d-4efd-b2ca-487cb814ff04">
+        <label>Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required />
+
+        <label>Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required />
+
+        <label>Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="box info">
+      <h2>Contact Information</h2>
+      <p><strong>Phone:</strong> +27 63 607 7159</p>
+      <p><strong>Email:</strong> KayAnnConstruction.co.za</p>
+      <p><strong>Address:</strong><br>
+        367 Zone 14<br>
+        Ga-Rankuwa Rural, Ga-Rankuwa, 0208<br>
+		Pretoria, South Africa
+      </p>
+
+      <a href="https://wa.me/+27636077159#" class="whatsapp">Chat on WhatsApp</a>
+    </div>
+
+  </div>
+
+    <footer>
+      <div class="footer-left">&copy; <span id="year">2026</span> Kay Ann Construction. All rights reserved.</div>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61585968606571#"><img src="Facebook.webp" height="30px"></a>
+        <a href="https://www.instagram.com/kay_ann_construction/"><img src="instagram.png" height="30px"></a>
+		<a href="https://wa.me/+27636077159#"><img src="WhatsApp.webp" height="30px"></a>	        
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
