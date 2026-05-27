@@ -267,8 +267,7 @@ body {
 .container {
    max-width: 900px;
    margin: 40px auto;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
+   display: flex;
    gap: 30px;
    padding: 20px;
 } 
@@ -479,19 +478,9 @@ footer {
     gap: 2rem;
   }
 
-  .about-image-col {
-    position: static;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .exp-item {
+  .container {
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }
